@@ -17,33 +17,33 @@ import java.util.concurrent.TimeUnit;
 @SpringBootTest
 public class ProductControllerTest {
 
-    private static WebDriver browser;
-
-    @BeforeAll
-    public static void initBrowser() {
-        System.setProperty("webdriver.chrome.driver",
-                "src/test/java/com/codegym/chromedriver/_119/chromedriver.exe");
-
-        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--headless");
-        options.addArguments("--remote-allow-origins=*");
-        browser = new ChromeDriver(options);
-        browser.manage().window().maximize();
-        browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    }
-
-    @AfterAll
-    public static void destroyBrowser() {
-        browser.quit();
-    }
-
-    private void slow() {
-        try {
-            Thread.sleep(2 * 1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+//    private static WebDriver browser;
+//
+//    @BeforeAll
+//    public static void initBrowser() {
+//        System.setProperty("webdriver.chrome.driver",
+//                "src/test/java/com/codegym/chromedriver/_119/chromedriver.exe");
+//
+//        ChromeOptions options = new ChromeOptions();
+////        options.addArguments("--headless");
+//        options.addArguments("--remote-allow-origins=*");
+//        browser = new ChromeDriver(options);
+//        browser.manage().window().maximize();
+//        browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//    }
+//
+//    @AfterAll
+//    public static void destroyBrowser() {
+//        browser.quit();
+//    }
+//
+//    private void slow() {
+//        try {
+//            Thread.sleep(2 * 1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
 //    @Test
 //    public void test_Username_Empty() {
