@@ -34,4 +34,4 @@ jobs:
         arguments: build
     - name: Make Gradle script executable
       run: |
-        chmod +x build.gradle
+        chmod +x gradlew
