@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/mdb.min.css">
+    <style>
+        .col-centered{
+            margin: 0 auto;
+            float: none;
+        }
+    </style>
+    <link rel="stylesheet" href="/css/animate.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row min-vh-100 align-items-center justify-content-center">
+            <div class="col-lg-12">
+                    <form action="/login" method="post" th:object="${userDto}">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-outline mb-4 w-50 col-centered">
+                                <input type="text" id="inputEmail" th:field="*{username}"
+                                       class="form-control form-control-lg" />
+                                <label class="form-label" for="inputEmail">Email</label>
+                            </div>
+                            <div class="text-danger mb-4 w-50 col-centered" th:errors="*{username}">
+                            </div>
+                            <div class="form-outline mb-4 w-50 col-centered">
+                                <input type="password" id="inputPassword" th:field="*{password}"
+                                       class="form-control form-control-lg" />
+                                <label class="form-label" for="inputPassword">Password</label>
+                            </div>
+                            <div class="text-danger mb-4 w-50 col-centered" th:errors="*{password}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-lg-3">
+                        <div class="text-success col-lg-12 text-center" th:text="${msg}">
+                        </div>
+                    </div>
+                    <div class="row mt-lg-3">
+                        <div class="col-lg-12 text-center">
+                            <button id="btnLogin" class="btn btn-primary btn-lg">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Copyright -->
+        <div class="text-center text-white bg-primary p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/mdb.min.js"></script>
+</body>
+</html>
