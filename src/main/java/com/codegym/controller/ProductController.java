@@ -16,7 +16,7 @@ public class ProductController {
 
     @GetMapping(value = "")
     public String goList() {
-		// test 1 2 3 4 5
+		// test 1 2 3 4 5 6
         return "list_products";
     }
 
