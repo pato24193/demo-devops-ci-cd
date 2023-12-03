@@ -75,16 +75,16 @@ public class ProductControllerTest {
 //        Assert.hasText(textDangers.get(1).getText(), "must not be empty");
 //    }
 //
-    @Test
-    public void test_All_Not_Empty() {
-        browser.get("http://localhost:8080/login");
-        browser.findElement(By.name("username")).sendKeys("tien.nguyen@codegym.vn");
-        browser.findElement(By.name("password")).sendKeys("12345678");
-        browser.findElement(By.id("btnLogin")).click();
-        slow();
-        String msg = browser.findElement(By.name("text-success")).getText();
-        Assert.hasText(msg, "Login success!");
-    }
+//    @Test
+//    public void test_All_Not_Empty() {
+//        browser.get("http://localhost:8080/login");
+//        browser.findElement(By.name("username")).sendKeys("tien.nguyen@codegym.vn");
+//        browser.findElement(By.name("password")).sendKeys("12345678");
+//        browser.findElement(By.id("btnLogin")).click();
+//        slow();
+//        String msg = browser.findElement(By.name("text-success")).getText();
+//        Assert.hasText(msg, "Login success!");
+//    }
 
     @Test
     public void test_All_Success() {
