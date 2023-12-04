@@ -74,7 +74,7 @@ public class ProductControllerTest {
 //        Assert.hasText(textDangers.get(0).getText(), "must not be empty");
 //        Assert.hasText(textDangers.get(1).getText(), "must not be empty");
 //    }
-//
+
 //    @Test
 //    public void test_All_Not_Empty() {
 //        browser.get("http://localhost:8080/login");
