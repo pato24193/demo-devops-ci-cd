@@ -38,12 +38,12 @@ public class ProductControllerTest {
 //    }
 //
 //    private void slow() {
-        try {
-            Thread.sleep(2 * 1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+//        try {
+//            Thread.sleep(2 * 1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
 //    @Test
 //    public void test_Username_Empty() {
